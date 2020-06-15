@@ -21,7 +21,7 @@ const obliczWyplaty = () => {
     //oznacz osoby pracujące < 100h
     if (czas < 100) {
       pracownik.classList.add("len");
-    }
+    } else pracownik.classList.remove("len");
     pracownik.children[3].innerText = wyplata + premia;
   }
 }
