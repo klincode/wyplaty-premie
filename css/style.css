@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+#pracownicy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 10px #34343449;
+  max-width: 1180px;
+  margin: 5vh auto;
+}
+
+.len {
+  background-color: rgba(158, 0, 32, 0.925) !important;
+  color: #fff;
+}
+
+#pracownicy #title {
+  display: flex;
+  flex-direction: row;
+  justify-items: flex-start;
+  max-width: 1180px;
+  background-color: #47718f;
+  color: #fff;
+  padding: 5px 12px;
+  text-transform: uppercase;
+  border: 1px solid #eeedf1;
+}
+
+#pracownicy>div[id^='pracownik'] {
+  display: flex;
+  border: 1px solid #eeedf1;
+  padding: 1px 10px;
+}
+
+#pracownicy>div[id^='pracownik']:hover {
+  background-color: #5e87a5;
+  color: #fff;
+}
+
+#pracownicy div:nth-child(2n+3) {
+  background-color: #eeedf1;
+}
+
+span {
+  display: block;
+  min-width: 175px;
+  text-align: left;
+}
+
+.wyplata {
+  text-align: center;
+}
+
+.wyplata::after {
+  content: " zł"
+}
+
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  word-spacing: 10px;
+  font-size: 18px;
+}
+
+h3 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 16px;
+}
+
+#najlepsi-pracownicy {
+  /* font-size: 1px; */
+  margin-top: 10px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  color: #5e87a5
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #5e87a5;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #5e87a5;
+  border: 1px solid #5e87a5
+}
